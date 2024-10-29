@@ -9,6 +9,10 @@ fastapi = {extras = ["standard"], version = "*"}
 langchain-google-genai = "*"
 langchain-community = "*"
 langchainhub = "*"
+black = "*"
+python-dotenv = "*"
+langchain-openai = "*"
+langgraph = "*"
 
 [dev-packages]
 
