@@ -13,6 +13,7 @@ black = "*"
 python-dotenv = "*"
 langchain-openai = "*"
 langgraph = "*"
+streamlit = "*"
 
 [dev-packages]
 
