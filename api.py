@@ -14,7 +14,7 @@ class Booking(BaseModel):
 desks = ["D001", "D002", "D003", "D004"]
 bookings = [
     Booking(
-        location="Lisbon", date="2024-12-01", person="John Doe", desk=desks[0]
+        location="Lisbon", date="2025-01-02", person="John Doe", desk=desks[0]
     )
 ]
 app = FastAPI()

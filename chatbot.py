@@ -7,6 +7,13 @@ import streamlit as st
 import requests
 
 
+# Example prompts:
+# ----------------
+# Book me a desk on 2025-01-02 in the Lisbon office
+# Who will be in the Lisbon office on 2025-01-02
+# And how will be the weather like in Lisbon on 2025-01-02
+
+
 @tool(return_direct=True)
 def book_desk(location: str, date: str) -> str:
     """Books a desk in the [location] on [date]"""
@@ -81,12 +88,3 @@ if prompt := st.chat_input():
     response = final_result["messages"][-1].content
     st.session_state.messages.append({"role": "assistant", "content": response})
     st.chat_message("assistant").write(response)
-
-    # Queries:
-    #
-    # Book me a desk on 2024-12-01 in the Lisbon office
-    # Who will be in the Lisbon office on 2024-12-01
-    # And how will be the weather like in Lisbon on 2024-12-01
-
-    # what's the weather in sf
-    # what's the weather in nyc

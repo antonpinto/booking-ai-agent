@@ -4,6 +4,8 @@ This is a web application that uses LangChain🦜🔗 and Streamlit to create a 
 This is just a proof of concept to explore AI Agents. In this case the agent knows how to book a desk for you in your
 office.
 
+![Logo](https://github.com/antonpinto/booking-ai-agent/images/booking-ai-agent.png)
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variable to your .env file
