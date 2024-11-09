@@ -1,7 +1,8 @@
 # Booking AI Agent - A proof of concept
 
-This is a web application that uses LangChain🦜🔗 and Streamio to create a chatbot to work as your personal assistant.
-This is just a proof of concept to explore what can be done already with AI Agents.
+This is a web application that uses LangChain🦜🔗 and Streamlit to create a chatbot to work as your personal assistant.
+This is just a proof of concept to explore AI Agents. In this case the agent knows how to book a desk for you in your
+office.
 
 ## Environment Variables
 
@@ -23,23 +24,24 @@ Go to the project directory
 cd booking-ai-agent
 ```
 
-Install dependencies
+Install dependencies and activate this project's virtualenv
 
 ```bash
 pipenv install
-```
-
-Start the Streamio server
-
-```bash
 pipenv shell
-streamlit run chatbot.py
 ```
 
-Start the FastAPI service
+Start the FastAPI service and Streamlit app
 
 ```bash
 uvicorn api:app
+streamlit run chatbot.py
+```
+
+Now interact with the chatbot app in your browser
+
+```bash
+http://localhost:8501
 ```
 
 ## 🔗 Links
